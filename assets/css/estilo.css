@@ -1,0 +1,61 @@
+/* Estilos próprios do LogiFrete (complementam o Bootstrap) */
+body {
+    background-color: #f4f6fb;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+.card {
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+}
+
+.card-resumo .icone {
+    font-size: 2.2rem;
+    opacity: 0.85;
+}
+
+.card-resumo .numero {
+    font-size: 1.9rem;
+    font-weight: 700;
+}
+
+.titulo-pagina {
+    font-weight: 700;
+    color: #1f2d3d;
+}
+
+.table thead th {
+    background-color: #eef2f9;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.item-produto {
+    background-color: #f8f9fc;
+    border: 1px dashed #c5cde0;
+    border-radius: 10px;
+    padding: 12px;
+}
+
+.badge-status {
+    font-size: 0.8rem;
+}
+
+@media print {
+    nav, footer, .nao-imprimir {
+        display: none !important;
+    }
+    body {
+        background: #fff;
+    }
+    .card {
+        box-shadow: none;
+    }
+}
